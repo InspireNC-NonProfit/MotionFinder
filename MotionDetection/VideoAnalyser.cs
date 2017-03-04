@@ -42,7 +42,6 @@ namespace MotionDetection
                     if (i > 0)
                     {
                         var avDis = GetAverageDifferenceFromPrevious(byteArray, previous, 20);
-                        TimeSpan ts = new TimeSpan(0, 0, i);
                         listToReturn.Add(avDis);
                     }
                     previous = byteArray;
